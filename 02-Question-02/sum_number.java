@@ -11,7 +11,6 @@ public class sum_number {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println("hello world");
-        System.out.println(sumofdigit(121));
+        System.out.println("sum of the digits in an integer is: "+sumofdigit(121));
     }
 }
