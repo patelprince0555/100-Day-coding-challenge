@@ -6,9 +6,9 @@ public class palindrome{
     public static int ispalindrome(int n){
         int reverse=0;
        while(n!=0){
-        int lastdigit = n%10;
+        int lastdigit = n%10;  // gives remainder
         reverse=reverse*10+lastdigit;
-        n=n/10;
+        n=n/10;  // gives quotient
        }
        return reverse;
     }
