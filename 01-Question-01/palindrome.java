@@ -17,9 +17,9 @@ public class palindrome{
         System.out.println("Enter a number");
         int number1 = sc.nextInt();
         if(ispalindrome(number1)==number1){
-            System.out.println("number:"+number1+"is a palindrome");
+            System.out.println("number: "+number1+" is a palindrome");
         }else{
-            System.out.println("number:"+number1+"is not a palindrome");
+            System.out.println("number: "+number1+" is not a palindrome");
         }
         
     }
