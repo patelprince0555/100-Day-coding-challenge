@@ -1,4 +1,5 @@
 // bubble sort
+// large elements come to the end of array by swapping with adjacent elements
 
 public class Bubble_sort {
     public static void bubbleSort(int nums[]){

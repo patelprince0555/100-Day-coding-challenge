@@ -1,5 +1,5 @@
 // selection-sort
-
+// pick the smallest from unsorted put it at the beginning
 public class selection_sort {
     public static void selectionSort(int nums[]){
         for(int i=0;i<nums.length-1;i++){
