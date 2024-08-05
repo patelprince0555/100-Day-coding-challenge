@@ -14,7 +14,7 @@ public class Second_Smallest_number {
             if(nums[i]<min){
                 second_min=min;
                 min=nums[i];
-            }else if (nums[i]<second_min) {
+            }else if (nums[i]<second_min && nums[i]!=min) {
                 second_min=nums[i];
             } else if(second_min==min){
                 second_min=-1;
@@ -23,7 +23,7 @@ public class Second_Smallest_number {
         System.out.println("second smallest number is: "+second_min);
     }
     public static void main(String[] args) {
-        int nums[]={2,10,8,1,6,9};
+        int nums[]={2,10,8,1,1,6,9};
         SecondSmallest(nums);
     }
 }

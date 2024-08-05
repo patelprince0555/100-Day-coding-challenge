@@ -13,7 +13,7 @@ public class Second_largest_Element {
         if(nums[i]>largest){
             second_largest=largest;
             largest=nums[i];
-        }else if(nums[i]>second_largest){
+        }else if(nums[i]>second_largest&&nums[i]!=largest){
             second_largest=nums[i];
         }else if (largest==second_largest) {
             second_largest=-1;
@@ -22,7 +22,7 @@ public class Second_largest_Element {
        System.out.println(second_largest);
     }
     public static void main(String[] args) {
-        int nums[]={1,2,2,4,7,5};
+        int nums[]={1,2,2,4,7,7,5};
         secondLargest(nums);
     }
 }
