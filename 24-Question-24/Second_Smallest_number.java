@@ -23,7 +23,7 @@ public class Second_Smallest_number {
         System.out.println("second smallest number is: "+second_min);
     }
     public static void main(String[] args) {
-        int nums[]={1,1,1};
+        int nums[]={1,3,2,4,1,1,1,2};
         SecondSmallest(nums);
     }
 }
