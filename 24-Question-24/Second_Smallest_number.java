@@ -16,14 +16,14 @@ public class Second_Smallest_number {
                 min=nums[i];
             }else if (nums[i]<second_min && nums[i]!=min) {
                 second_min=nums[i];
-            } else if(second_min==min){
+            } else if(second_min==Integer.MAX_VALUE){
                 second_min=-1;
             }
         }
         System.out.println("second smallest number is: "+second_min);
     }
     public static void main(String[] args) {
-        int nums[]={2,10,8,1,1,6,9};
+        int nums[]={1,1,1};
         SecondSmallest(nums);
     }
 }

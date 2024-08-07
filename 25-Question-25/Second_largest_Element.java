@@ -15,7 +15,7 @@ public class Second_largest_Element {
             largest=nums[i];
         }else if(nums[i]>second_largest&&nums[i]!=largest){
             second_largest=nums[i];
-        }else if (largest==second_largest) {
+        }else if (largest==Integer.MIN_VALUE) {
             second_largest=-1;
         }
        }
