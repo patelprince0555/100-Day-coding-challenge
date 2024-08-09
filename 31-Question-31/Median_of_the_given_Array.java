@@ -21,14 +21,14 @@ public class Median_of_the_given_Array {
         if(n%2==0){
             int index2=(n/2)-1;
             int index1=n/2;
-             Median=(double)nums[index1]+nums[index2]/2;
+             Median=(double)(nums[index1]+nums[index2])/2;
         }else{
-              Median=nums[n-1/2];
+              Median=nums[(n-1)/2];
         }
         return Median;
     }
     public static void main(String[] args) {
-        int nums[]={2,5,1,7,3};
+        int nums[]={2,4,1,3,5};
         System.out.println(MedainArray(nums));
         
     }
