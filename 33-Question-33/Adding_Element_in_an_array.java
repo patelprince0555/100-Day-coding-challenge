@@ -11,9 +11,9 @@
 // Explanation: 6 is added at the beginning and 7 is added at the end and 8 is added at position 4 
 
 public class Adding_Element_in_an_array {
-    public static int[] insertBeginning(int[] arr, int element) {
+    public static int insertBeginning(int[] arr, int element) {
         int n = arr.length;
-        int[] newArr = new int[n + 1];
+        int newArr[] = new int[n + 1];
         newArr[0] = element;
         for (int i = 0; i < n; i++) {
             newArr[i + 1] = arr[i];
@@ -56,10 +56,6 @@ public class Adding_Element_in_an_array {
     
     public static void main(String[] args) {
         int nums[]={1,2,3,4,5};
-        insertBeginning(nums, 6);
-        insertEnding(nums, 7);
-        insertAtPosition(nums, 8, 4);
-        printArray(nums);
         
     }
 }

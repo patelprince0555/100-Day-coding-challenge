@@ -14,7 +14,7 @@
 // Explanation: Rotate the array to right by 3 elements.
 
 public class Rotate_array_by_k_elements {
-    public  static void reverse(int nums[],int start,int end){
+    public static void reverse(int nums[],int start,int end){
         while(start<=end){
             int temp=nums[start];
             nums[start]=nums[end];
@@ -23,7 +23,7 @@ public class Rotate_array_by_k_elements {
             end--;
         }
     }
-    public  static void rotate(int[] nums, int k) {
+    public static void rotate(int[] nums, int k) {
         int n =nums.length;
         k%=n;
         reverse(nums,0,n-1);
