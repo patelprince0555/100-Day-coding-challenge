@@ -31,6 +31,7 @@ public class find_all_repeating_elements_in_an_array {
                 }
             }
         }
+        System.out.println(count);
          // Create a new array with the correct size
          int[] result = new int[count];
          for (int i = 0; i < count; i++) {

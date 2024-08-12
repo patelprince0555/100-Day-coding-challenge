@@ -23,30 +23,45 @@
 import java.util.Arrays;
 
 public class Non_repeating_elements_in_an_array {
-    public static int[] nonrepatingElements(int nums[]){
-        Arrays.sort(nums);
+    public static int[] nonRepeatingElements(int nums[]) {
         int n = nums.length;
-        int count=0;
-        for(int i=0;i<n-1;i++){
-            for(int j=i+1;j<n;j++){
-                if(nums[j]!=nums[i]){
-                    nums[count]=nums[i];
-                    count++;
+        int count = 0;
+        // Temporary array to hold non-repeating elements
+        int[] temp = new int[n];
+        
+        for (int i = 0; i < n; i++) {
+            boolean isRepeating = false;
+            for (int j = 0; j < n; j++) {
+                if (i != j && nums[i] == nums[j]) {
+                    isRepeating = true;
+                    break;
                 }
             }
+            if (!isRepeating) {
+                temp[count] = nums[i];
+                count++;
+            }
         }
+        
         // Create a new array with the correct size
         int[] result = new int[count];
         for (int i = 0; i < count; i++) {
-            result[i] = nums[i];
+            result[i] = temp[i];
         }
 
         return result;
     }
+
+    public static void printArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
-        int nums[]={1,2,-1,1,3,1};
-        int nums1[]=nonrepatingElements(nums);
-        System.out.println(nums1);
-        
+        int nums[] = {1, 2, -1, 1, 3, 1};
+        int nums1[] = nonRepeatingElements(nums);
+        printArray(nums1);
     }
 }
