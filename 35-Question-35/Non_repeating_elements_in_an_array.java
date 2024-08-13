@@ -20,7 +20,7 @@
 // Explanation:
 //  All elements present in the array occur once. Hence, every element is non-repeating.
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class Non_repeating_elements_in_an_array {
     public static int[] nonRepeatingElements(int nums[]) {
