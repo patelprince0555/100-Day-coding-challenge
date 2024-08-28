@@ -49,7 +49,7 @@ public class Maximum_Product_Subarray_in_an_Array {
         System.out.println(tr);
     }
     public static void main(String[] args) {
-        int nums[]={1,2,3,4,5,0};
+        int nums[]={1,2,-3,0,-4,-5};
         maximumProduct(nums);
         
     }
