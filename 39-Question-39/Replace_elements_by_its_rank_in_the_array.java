@@ -16,6 +16,6 @@
 
 public class Replace_elements_by_its_rank_in_the_array {
     public static void main(String[] args) {
-        int nums[]={20,15,26,2,98,6};
+        // int nums[]={20,15,26,2,98,6};
     }
 }
