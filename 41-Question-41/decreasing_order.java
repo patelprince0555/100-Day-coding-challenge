@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 
-public class decreasing_number {
+public class decreasing_order {
     public static void printArray(Integer num[]){
         for(int i=0;i<num.length;i++){
             System.out.print(num[i]+" ");
