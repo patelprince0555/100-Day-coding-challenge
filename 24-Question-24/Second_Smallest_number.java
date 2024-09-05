@@ -6,6 +6,8 @@
 // Output:
 //  Second Smallest : 2
 
+import java.util.Scanner;
+
 public class Second_Smallest_number {
     public static void SecondSmallest(int nums[]){
         int min=Integer.MAX_VALUE;
@@ -23,7 +25,27 @@ public class Second_Smallest_number {
         System.out.println("second smallest number is: "+second_min);
     }
     public static void main(String[] args) {
-        int nums[]={1,3,2,4,1,1,1,2};
-        SecondSmallest(nums);
+        System.out.println("Enter size of array");
+        Scanner sc = new Scanner(System.in);
+        int n  = sc.nextInt();
+        int n1[] = new int[n];
+
+        // input Array
+        for(int i=0;i<n;i++){
+            n1[i]=sc.nextInt();
+        }
+
+        // display method 1
+        for(int i=0;i<n1.length;i++){
+            System.out.print(n1[i]+" ");
+        }
+        System.out.println();
+
+        // method 2
+        // for (int i : n1) {
+        //     System.out.print(i + " ");
+        // }
+        SecondSmallest(n1);
+        
     }
 }
