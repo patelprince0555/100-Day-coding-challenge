@@ -2,7 +2,7 @@
 
 public class convert_firstletter_of_each_word_to_uppercase {
     public static void stringtoUppercase(String str){
-        StringBuilder sb = new StringBuilder(" ");
+        StringBuilder sb = new StringBuilder("");
         sb.append(Character.toUpperCase(str.charAt(0)))  ;
         for(int i=1;i<str.length();i++){
             if(str.charAt(i)==' '&& i<str.length()-1){

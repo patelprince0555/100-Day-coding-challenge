@@ -32,12 +32,12 @@ public class Rotate_array_by_K_elements {
         }
     }
     public static void main(String[] args) {
-        int nums[]={1,2,3,4,5,6,7};
+        int nums[]={3,7,8,9,10,11};
         int n=nums.length;
         int k=2;
         RotateArray(nums, 0, n-1);
-        RotateArray(nums, 0, k-1);
-        RotateArray(nums, k, n-1);
+        RotateArray(nums, 0, k);
+        RotateArray(nums, k+1, n-1);
         printArray(nums);
     }
 }
