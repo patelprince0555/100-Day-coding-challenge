@@ -13,7 +13,7 @@
 // Output: True
 // Explanation: 33+53+13 = 27 + 343 + 1 = 371
 
-public class ArmstrongNumberCheck {
+public class check_if_number_is_armstrong_number_or_not {
     public static boolean isArmstrong(int n) {
         int originalNumber = n; // Preserve the original value of n
         int count = 0;
@@ -43,4 +43,3 @@ public class ArmstrongNumberCheck {
         System.out.println(isArmstrong(153)); // Output: true
     }
 }
-
