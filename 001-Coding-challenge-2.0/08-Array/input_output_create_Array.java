@@ -17,6 +17,5 @@ public class input_output_create_Array {
         for(int i=0;i<numbers.length;i++){
             System.out.println("Element at index "+i+" : "+numbers[i]);
         }
-
     }
 }
