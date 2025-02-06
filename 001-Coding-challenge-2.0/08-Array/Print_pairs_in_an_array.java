@@ -5,9 +5,10 @@
             int primarynum=numbers[i];
             for(int j=i+1;j<numbers.length;j++){
                 int secnum=numbers[j];
-                System.out.println("("+ primarynum +","+ secnum +")");
+                System.out.print("("+ primarynum +","+ secnum +")");
                 totalpairs++;
             }
+            System.out.println();
         }
         System.out.println(totalpairs);
     }
