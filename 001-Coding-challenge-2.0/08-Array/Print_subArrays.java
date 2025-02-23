@@ -13,6 +13,5 @@ public class Print_subArrays {
     public static void main(String[] args) {
         int arrays[]={2,4,6,8,10};
         printsubArrays(arrays);
-
     }
 }
